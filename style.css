@@ -1,0 +1,93 @@
+#headerDiv {
+    background-color: rgb(94, 112, 114);
+    /* width: 100%; */
+    border: 1px outset black;
+    /* height: 100px; */
+    text-align: center;
+    font-size: 38px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: italic;
+    height: 80px;
+    padding: 0px 0px 20px 0px;
+
+}
+
+#headerP {
+    color: white;
+}
+
+#leftSideBar {
+    background-color: rgb(55, 55, 52);
+    width: 25%;
+    height: 900px;
+    border: 2px outset gold;
+
+}
+
+#sidebarP {
+    text-align: center;
+    padding: 120px 10px 1px 10px;
+
+}
+
+#sidebarP1 {
+
+    text-align: center;
+    padding: 10px 10px 1px 10px;
+
+}
+
+#profile {
+    background-color: rgb(221, 238, 246);
+    width: 100%;
+    height: 900px;
+    padding: 0px 0px 0px 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#profile1,#project3 ,#acheivement{
+    padding-left: 20px;
+    font-size:30px ;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#profileDes{
+    padding-left: 20px;
+    font-size: 16 px;
+
+}
+#profileid2{
+
+    padding-left: 20px;
+    font-size:30px ;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+table, th, td {
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    
+    
+  }
+  #container1{
+    padding-left: 50px;
+  }
+
+  #declaration{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  a{
+    color: white;
+  }
+
+  
+  

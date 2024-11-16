@@ -1,93 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 #headerDiv {
     background-color: rgb(94, 112, 114);
-    /* width: 100%; */
     border: 1px outset black;
-    /* height: 100px; */
     text-align: center;
     font-size: 38px;
     border-radius: 5px;
     font-weight: bold;
     font-style: italic;
     height: 80px;
-    padding: 0px 0px 20px 0px;
-
+    padding: 20px 0;
 }
 
 #headerP {
     color: white;
 }
 
-#leftSideBar {
-    background-color: rgb(55, 55, 52);
-    width: 25%;
-    height: 900px;
-    border: 2px outset gold;
-
-}
-
-#sidebarP {
-    text-align: center;
-    padding: 120px 10px 1px 10px;
-
-}
-
-#sidebarP1 {
-
-    text-align: center;
-    padding: 10px 10px 1px 10px;
-
-}
-
-#profile {
-    background-color: rgb(221, 238, 246);
-    width: 100%;
-    height: 900px;
-    padding: 0px 0px 0px 10px;
-}
-
+/* Container Flexbox Layout */
 #container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-#profile1,#project3 ,#acheivement{
-    padding-left: 20px;
-    font-size:30px ;
+/* Sidebar Styles */
+#leftSideBar {
+    background-color: rgb(55, 55, 52);
+    width: 25%;
+    padding: 20px;
+    border: 2px outset gold;
+    color: white;
+    box-sizing: border-box;
+}
+
+#leftSideBar p {
+    margin-bottom: 10px;
+}
+
+/* Profile Section */
+#profile {
+    background-color: rgb(221, 238, 246);
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Titles */
+#profile1, #project3, #acheivement, #profileid2 {
+    font-size: 30px;
     font-weight: bold;
+    margin-bottom: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#profileDes{
-    padding-left: 20px;
-    font-size: 16 px;
-
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
-#profileid2{
 
-    padding-left: 20px;
-    font-size:30px ;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 table, th, td {
     border: 1px solid black;
-    border-radius: 3px;
+    padding: 10px;
     text-align: center;
-    
-    
-  }
-  #container1{
-    padding-left: 50px;
-  }
+}
 
-  #declaration{
-    padding-left: 20px;
+/* Declaration */
+#declaration {
     font-weight: bold;
     font-size: 20px;
-  }
-  a{
-    color: white;
-  }
+}
 
-  
-  
+/* Responsive Design */
+
+/* Mobile (Small Screens) */
+@media screen and (max-width: 767px) {
+    #leftSideBar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #profile {
+        width: 100%;
+    }
+
+    #headerDiv {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    #profile1, #project3, #acheivement, #profileid2 {
+        font-size: 24px;
+    }
+}
+
+/* Laptop (Medium Screens) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #leftSideBar {
+        width: 30%;
+    }
+
+    #profile {
+        width: 70%;
+    }
+
+    #headerDiv {
+        font-size: 32px;
+        height: 100px;
+        padding: 15px 0;
+    }
+
+    table, th, td {
+        font-size: 16px;
+    }
+
+    #profile1, #project3, #acheivement, #profileid2 {
+        font-size: 28px;
+    }
+}
+
+/* Desktop (Large Screens) */
+@media screen and (min-width: 1025px) {
+    #leftSideBar {
+        width: 25%;
+    }
+
+    #profile {
+        width: 75%;
+    }
+
+    #headerDiv {
+        font-size: 38px;
+        height: 80px;
+        padding: 20px 0;
+    }
+
+    table, th, td {
+        font-size: 18px;
+    }
+
+    #profile1, #project3, #acheivement, #profileid2 {
+        font-size: 30px;
+    }
+}

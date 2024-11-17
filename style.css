@@ -162,4 +162,8 @@ table, th, td {
     #profile1, #project3, #acheivement, #profileid2 {
         font-size: 30px;
     }
+
+#print{
+   float: right;
+}
 }
